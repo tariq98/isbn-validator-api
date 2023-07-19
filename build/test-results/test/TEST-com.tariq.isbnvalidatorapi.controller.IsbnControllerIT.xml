@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tariq.isbnvalidatorapi.controller.IsbnControllerIT" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-19T08:00:43" hostname="HIQSTOL869" time="2.006">
+  <properties/>
+  <testcase name="validateReturnsOkAndTrueWhenValidIsbn()" classname="com.tariq.isbnvalidatorapi.controller.IsbnControllerIT" time="1.956"/>
+  <testcase name="validateReturnsBadRequestWhenInValidIsbnFormat()" classname="com.tariq.isbnvalidatorapi.controller.IsbnControllerIT" time="0.02"/>
+  <testcase name="validateReturnsOkAndFalseWhenInValidIsbn()" classname="com.tariq.isbnvalidatorapi.controller.IsbnControllerIT" time="0.027"/>
+  <system-out><![CDATA[2023-07-19T10:00:42.442+02:00  INFO 19824 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tariq.isbnvalidatorapi.controller.IsbnControllerIT]: IsbnControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-19T10:00:42.450+02:00  INFO 19824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tariq.isbnvalidatorapi.IsbnValidatorApiApplication for test class com.tariq.isbnvalidatorapi.controller.IsbnControllerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-07-19T10:00:42.482+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : Starting IsbnControllerIT using Java 17.0.2 with PID 19824 (started by TariqDa in C:\isbn-validator-api)
+2023-07-19T10:00:42.482+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : No active profile set, falling back to 1 default profile: "default"
+2023-07-19T10:00:42.836+02:00  INFO 19824 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-19T10:00:42.852+02:00  INFO 19824 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-19T10:00:42.853+02:00  INFO 19824 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-19T10:00:42.953+02:00  INFO 19824 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-19T10:00:42.956+02:00  INFO 19824 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2023-07-19T10:00:43.152+02:00  INFO 19824 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49716 (http) with context path ''
+2023-07-19T10:00:43.156+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : Started IsbnControllerIT in 0.7 seconds (process running for 4.859)
+2023-07-19T10:00:44.368+02:00  INFO 19824 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-19T10:00:44.368+02:00  INFO 19824 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-19T10:00:44.369+02:00  INFO 19824 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

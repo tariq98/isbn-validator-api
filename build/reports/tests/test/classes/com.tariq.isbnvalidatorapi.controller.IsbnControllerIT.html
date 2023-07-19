@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - IsbnControllerIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>IsbnControllerIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tariq.isbnvalidatorapi.controller.html">com.tariq.isbnvalidatorapi.controller</a> &gt; IsbnControllerIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.003s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">validateReturnsBadRequestWhenInValidIsbnFormat()</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateReturnsOkAndFalseWhenInValidIsbn()</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validateReturnsOkAndTrueWhenValidIsbn()</td>
+<td class="success">1.956s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-07-19T10:00:42.442+02:00  INFO 19824 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tariq.isbnvalidatorapi.controller.IsbnControllerIT]: IsbnControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-19T10:00:42.450+02:00  INFO 19824 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tariq.isbnvalidatorapi.IsbnValidatorApiApplication for test class com.tariq.isbnvalidatorapi.controller.IsbnControllerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-07-19T10:00:42.482+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : Starting IsbnControllerIT using Java 17.0.2 with PID 19824 (started by TariqDa in C:\isbn-validator-api)
+2023-07-19T10:00:42.482+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-07-19T10:00:42.836+02:00  INFO 19824 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-19T10:00:42.852+02:00  INFO 19824 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-19T10:00:42.853+02:00  INFO 19824 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-19T10:00:42.953+02:00  INFO 19824 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-19T10:00:42.956+02:00  INFO 19824 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2023-07-19T10:00:43.152+02:00  INFO 19824 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49716 (http) with context path ''
+2023-07-19T10:00:43.156+02:00  INFO 19824 --- [    Test worker] c.t.i.controller.IsbnControllerIT        : Started IsbnControllerIT in 0.7 seconds (process running for 4.859)
+2023-07-19T10:00:44.368+02:00  INFO 19824 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-19T10:00:44.368+02:00  INFO 19824 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-19T10:00:44.369+02:00  INFO 19824 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at Jul 19, 2023, 10:00:45 AM</p>
+</div>
+</div>
+</body>
+</html>
